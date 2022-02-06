@@ -516,6 +516,7 @@ body .warp {
   margin: 0 auto;
 }
 .c-button .c-button__inner {
+  text-align: center;
   position: relative;
   display: inline-block;
   border: #323232 1px solid;
