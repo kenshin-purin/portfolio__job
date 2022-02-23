@@ -89,3 +89,19 @@ $(document).ready(function(){
   $('html,body').animate({ scrollTop: 0 }, '1');
 });
 
+
+//モーダルウィンドウ
+$(function () {
+  $('.js-modal__open01').click(function(){
+      $('.js-modal__box01').fadeIn();
+  });
+  $('.js-modal__open02').click(function(){
+    $('.js-modal__box02').fadeIn();
+  });
+  $('.js-modal__open03').click(function(){
+    $('.js-modal__box03').fadeIn();
+  });
+  $('.js-modal__close , .js-modal__back').click(function(){
+    $('.js-modal__box').fadeOut();
+  });
+});
