@@ -138,7 +138,7 @@ body .warp {
 }
 .l-loading h2 {
   /*font-size1.6rem基準*/
-  font-size: clamp(1.4rem , 4.266vw , 1.8rem);
+  font-size: clamp(1.4rem, 4.266vw, 1.8rem);
   -webkit-animation: load 2s linear infinite;
           animation: load 2s linear infinite;
   color: #323232;
@@ -347,7 +347,7 @@ body .warp {
   display: flex;
 }
 .c-nav__sns .c-nav__sns-link {
-  width: clamp(40px , 11.2vw , 60px);
+  width: clamp(40px, 11.2vw, 60px);
   margin-top: 42px;
   margin-right: 7.02%;
 }
@@ -411,7 +411,7 @@ body .warp {
 }
 @media only screen and (min-width: 1025px) {
   .l-section__contents {
-    padding-bottom: clamp(120px , 13.177vw , 200px);
+    padding-bottom: clamp(120px, 13.177vw, 200px);
   }
 }
 
@@ -1042,7 +1042,7 @@ body .warp {
   position: absolute;
   width: 11.73vw;
   height: 11.73vw;
-  top: calc( 50% - 20px );
+  top: calc(50% - 20px);
   transition: transform 200ms;
   max-width: 80px;
 }
@@ -1172,25 +1172,25 @@ body p {
   color: #323232;
   font-family: "Noto Serif JP";
   /*fontsize (1.5rem基準)*/
-  font-size: clamp(1.5rem , 4vw , 1.8rem);
+  font-size: clamp(1.5rem, 4vw, 1.8rem);
   font-weight: 300;
   line-height: 2;
-  letter-spacing: clamp(0.4rem , 0.3vw , 1.2rem);
+  letter-spacing: clamp(0.4rem, 0.3vw, 1.2rem);
 }
 @media only screen and (min-width: 600px) {
   body p {
     /*fontsize (1.8rem基準)*/
-    font-size: clamp(1.6rem , 2.34vw , 2.2rem );
+    font-size: clamp(1.6rem, 2.34vw, 2.2rem);
   }
 }
 @media only screen and (min-width: 1025px) {
   body p {
     /*fontsize (1.6rem基準)*/
-    font-size: clamp(1.6rem , 1.171vw ,1.8rem );
+    font-size: clamp(1.6rem, 1.171vw, 1.8rem);
   }
 }
 body .c-nav__link {
-  font-size: clamp(2.4rem , 6.933vw , 2.6rem);
+  font-size: clamp(2.4rem, 6.933vw, 2.6rem);
   height: 100%;
   width: 100%;
 }
@@ -1201,13 +1201,13 @@ body .c-nav__link {
   }
 }
 body .c-button a {
-  font-size: clamp(1.6rem , 3.2vw , 2.4rem);
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
   font-weight: 200;
-  letter-spacing: clamp(0.6rem , 0.4vw , 1.2rem);
+  letter-spacing: clamp(0.6rem, 0.4vw, 1.2rem);
 }
 @media only screen and (min-width: 1025px) {
   body .c-button a {
-    font-size: clamp(1.6rem , 1.171vw ,2.4rem );
+    font-size: clamp(1.6rem, 1.171vw, 2.4rem);
   }
 }
 body #footer p {
@@ -1240,68 +1240,68 @@ body .p-mv__text {
   display: inline-block;
   letter-spacing: 1.06vw;
   /*fontsize (1.4rem基準)*/
-  letter-spacing: clamp(0.7rem , 1.02vw , 1.6rem);
+  letter-spacing: clamp(0.7rem, 1.02vw, 1.6rem);
 }
 body .p-mv__text-01 {
   /*fontsize (1.8rem基準)*/
-  font-size: clamp(1.4rem , 4.8vw , 2.2rem);
+  font-size: clamp(1.4rem, 4.8vw, 2.2rem);
 }
 @media only screen and (min-width: 600px) {
   body .p-mv__text-01 {
-    font-size: clamp(2.4rem, 4.68vw , 3.8rem);
+    font-size: clamp(2.4rem, 4.68vw, 3.8rem);
   }
 }
 @media only screen and (min-width: 1025px) {
   body .p-mv__text-01 {
     /*fontsize (2.8rem基準)*/
-    font-size: clamp(2.4rem , 2.04vw , 3.4rem);
+    font-size: clamp(2.4rem, 2.04vw, 3.4rem);
   }
 }
 body .p-mv__text-02 {
   /*fontsize (5.4rem基準)*/
-  font-size: clamp(5rem , 14.4vw , 5.8rem);
+  font-size: clamp(5rem, 14.4vw, 5.8rem);
   letter-spacing: 1.6vw;
   font-weight: 200;
 }
 @media only screen and (min-width: 600px) {
   body .p-mv__text-02 {
-    font-size: clamp(8rem, 11.45vw , 9rem);
+    font-size: clamp(8rem, 11.45vw, 9rem);
   }
 }
 @media only screen and (min-width: 1025px) {
   body .p-mv__text-02 {
     /*fontsize (8rem基準)*/
-    font-size: clamp(7.6rem , 5.85vw , 8.6rem);
+    font-size: clamp(7.6rem, 5.85vw, 8.6rem);
   }
 }
 body .p-mv__text-03 {
   /*fontsize (2.8rem基準)*/
-  font-size: clamp(2.4rem , 7.46vw , 3.2rem);
+  font-size: clamp(2.4rem, 7.46vw, 3.2rem);
 }
 @media only screen and (min-width: 600px) {
   body .p-mv__text-03 {
-    font-size: clamp(2.4rem, 4.68vw , 3.8rem);
+    font-size: clamp(2.4rem, 4.68vw, 3.8rem);
   }
 }
 @media only screen and (min-width: 1025px) {
   body .p-mv__text-03 {
     /*fontsize (2.8rem基準)*/
-    font-size: clamp(2.4rem , 2.04vw , 3.4rem);
+    font-size: clamp(2.4rem, 2.04vw, 3.4rem);
   }
 }
 body .p-mv__text-04 {
   /*fontsize (1.8rem基準)*/
-  font-size: clamp(1.4rem , 4.8vw , 2.2rem);
+  font-size: clamp(1.4rem, 4.8vw, 2.2rem);
 }
 @media only screen and (min-width: 600px) {
   body .p-mv__text-04 {
-    font-size: clamp(2rem , 4.719vw , 3.4rem);
+    font-size: clamp(2rem, 4.719vw, 3.4rem);
   }
 }
 @media only screen and (min-width: 1025px) {
   body .p-mv__text-04 {
     /*fontsize (2.6rem基準)*/
-    font-size: clamp(2.2rem , 1.90vw , 3.2rem);
+    font-size: clamp(2.2rem, 1.9vw, 3.2rem);
   }
 }
 body .c-section__title {
@@ -1316,26 +1316,26 @@ body .c-section__title-sub {
   font-family: "Italianno", cursive;
 }
 body .c-section__title-sub {
-  font-size: clamp(9rem , 20vw , 30rem);
+  font-size: clamp(9rem, 20vw, 30rem);
   color: rgba(159, 209, 255, 0.4);
 }
 @media only screen and (min-width: 600px) {
   body .c-section__title-sub {
-    font-size: clamp( 11.6rem , 17.699vw , 12.4rem);
+    font-size: clamp(11.6rem, 17.699vw, 12.4rem);
   }
 }
 @media only screen and (min-width: 1025px) {
   body .c-section__title-sub {
-    font-size: clamp(11.6rem , 8.784vw , 13rem);
+    font-size: clamp(11.6rem, 8.784vw, 13rem);
   }
 }
 body .c-section__title-main {
   color: #000;
-  font-size: clamp(2.6rem , 6vw , 3.4rem);
+  font-size: clamp(2.6rem, 6vw, 3.4rem);
 }
 @media only screen and (min-width: 600px) {
   body .c-section__title-main {
-    font-size: clamp(3.2rem , 44.719vw , 3.6rem);
+    font-size: clamp(3.2rem, 44.719vw, 3.6rem);
   }
 }
 body .p-about__text .p-about__text-01 {
@@ -1343,7 +1343,7 @@ body .p-about__text .p-about__text-01 {
 }
 body .p-about__text .p-about__text-01 p {
   text-align: start;
-  font-size: clamp(2.2rem , 6.4vw , 4rem);
+  font-size: clamp(2.2rem, 6.4vw, 4rem);
 }
 @media only screen and (min-width: 1025px) {
   body .p-about__text .p-about__text-01 p {
@@ -1351,7 +1351,7 @@ body .p-about__text .p-about__text-01 p {
   }
 }
 body .p-about__text .p-about__text-01 p span {
-  font-size: clamp(1.4rem , 4.266vw , 2.6rem );
+  font-size: clamp(1.4rem, 4.266vw, 2.6rem);
   color: #707070;
 }
 @media only screen and (min-width: 1025px) {
@@ -1360,39 +1360,39 @@ body .p-about__text .p-about__text-01 p span {
   }
 }
 body .p-about__text .p-about__genre {
-  font-size: clamp(1.6rem , 3.539vw , 2.4rem);
+  font-size: clamp(1.6rem, 3.539vw, 2.4rem);
   color: #000;
   font-weight: 400;
 }
 @media only screen and (min-width: 1025px) {
   body .p-about__text .p-about__genre {
-    font-size: clamp(1.6rem , 1.317vw , 2rem);
+    font-size: clamp(1.6rem, 1.317vw, 2rem);
   }
 }
 body h4 {
-  font-size: clamp(2.2rem , 5vw , 3.2rem);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
 }
 @media only screen and (min-width: 1025px) {
   body h4 {
-    font-size: clamp(2rem , 1.90vw , 2.6rem);
+    font-size: clamp(2rem, 1.9vw, 2.6rem);
   }
 }
 body .p-works__item_text {
   /*fontsize (1.6rem基準)*/
-  font-size: clamp(1.2rem , 4.266vw , 2rem);
+  font-size: clamp(1.2rem, 4.266vw, 2rem);
 }
 @media only screen and (min-width: 1025px) {
   body .p-works__item_text {
-    font-size: clamp(2.4rem , 1.75vw , 2.4rem);
+    font-size: clamp(2.4rem, 1.75vw, 2.4rem);
   }
 }
 body .p-contact__item-text p {
   /*fontsize (1.6rem基準)*/
-  font-size: clamp(1.2rem , 4.266vw , 2rem);
+  font-size: clamp(1.2rem, 4.266vw, 2rem);
 }
 @media only screen and (min-width: 1025px) {
   body .p-contact__item-text p {
-    font-size: clamp(1.6rem , 1.75vw , 2.6rem);
+    font-size: clamp(1.6rem, 1.75vw, 2.6rem);
   }
 }
 

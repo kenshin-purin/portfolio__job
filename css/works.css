@@ -18,7 +18,7 @@ body .warp {
   position: fixed;
   bottom: -100px;
   right: 8px;
-  z-index: 9;
+  z-index: 8;
   width: 60px;
   height: 60px;
 }
@@ -108,72 +108,11 @@ body .warp {
 }
 
 /*===========================loading(全ページ共通)=============================*/
-.l-loading {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #fffcf4;
-  z-index: 9999;
-  top: 0%;
-  left: 0%;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 1s;
-}
-.l-loading .p-loading-circle {
-  position: absolute;
-  /*ここで円のサイズを指定*/
-  width: 30vw;
-  height: 30vw;
-  min-width: 260px;
-  min-height: 260px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.l-loading h2 {
-  /*font-size1.6rem基準*/
-  font-size: clamp(1.4rem , 4.266vw , 1.8rem);
-  -webkit-animation: load 2s linear infinite;
-          animation: load 2s linear infinite;
-  color: #323232;
-}
-@media only screen and (min-width: 1025px) {
-  .l-loading h2 {
-    font-size: 2.4rem;
-  }
-}
-@-webkit-keyframes load {
-  50% {
-    opacity: 0.4;
-    transform: translateY(-4px);
-  }
-  80% {
-    opacity: 0.6;
-  }
-}
-@keyframes load {
-  50% {
-    opacity: 0.4;
-    transform: translateY(-4px);
-  }
-  80% {
-    opacity: 0.6;
-  }
-}
-.l-loading.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 /*===========================/loading(全ページ共通)=============================*/
 /*============================header=============================*/
 .l-header {
   position: fixed;
-  z-index: 99;
+  z-index: 9;
   width: 100%;
   padding: 1.3vw 2.133vw;
   top: 0%;
@@ -183,7 +122,7 @@ body .warp {
   position: fixed;
   width: 60px;
   left: 2.33vw;
-  z-index: 9999;
+  z-index: 99;
 }
 @media only screen and (min-width: 600px) {
   .p-header__logo {
@@ -203,7 +142,7 @@ body .warp {
   width: 54px;
   height: 54px;
   position: absolute;
-  z-index: 9999;
+  z-index: 999;
   right: 2.33vw;
 }
 @media only screen and (min-width: 600px) {
@@ -283,7 +222,7 @@ body .warp {
   top: 0%;
   left: 0%;
   transition: ease 0.8s;
-  z-index: 999;
+  z-index: 99;
   opacity: 0;
   visibility: hidden;
   overflow: auto;
@@ -345,7 +284,7 @@ body .warp {
   display: flex;
 }
 .c-nav__sns .c-nav__sns-link {
-  width: clamp(40px , 11.2vw , 60px);
+  width: clamp(40px, 11.2vw, 60px);
   margin-top: 42px;
   margin-right: 7.02%;
 }
@@ -665,7 +604,7 @@ body .warp {
 }
 #works .p-works__item .p-works__item-inner-02 .p-works__item-text .p-works__text-02 .p-works__genre-title {
   display: inline-block;
-  margin-bottom: clamp(8px , 3.2vw , 16px);
+  margin-bottom: clamp(8px, 3.2vw, 16px);
 }
 @media only screen and (min-width: 1025px) {
   #works .p-works__item .p-works__item-inner-02 .p-works__item-text .p-works__text-02 .p-works__genre-title {
@@ -678,7 +617,7 @@ body .warp {
   background-color: rgba(50, 50, 50, 0.6);
   width: 10vw;
   height: 2px;
-  margin-bottom: clamp(8px , 3.2vw , 16px);
+  margin-bottom: clamp(8px, 3.2vw, 16px);
 }
 @media only screen and (min-width: 1025px) {
   #works .p-works__item .p-works__item-inner-02 .p-works__item-text .p-works__text-02 .p-genre__line {
@@ -721,6 +660,328 @@ body .warp {
 }
 
 /*============================/works=============================*/
+/*============================banner=============================*/
+.p-banner__list {
+  width: 80%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 600px) {
+  .p-banner__list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .p-banner__list {
+    width: 80%;
+  }
+}
+.p-banner__list .p-banner__list-item {
+  overflow: hidden;
+  width: 100%;
+  margin: 40px 8px;
+}
+@media only screen and (min-width: 600px) {
+  .p-banner__list .p-banner__list-item {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .p-banner__list .p-banner__list-item {
+    min-width: 280px;
+  }
+}
+.p-banner__list .p-banner__list-item img {
+  transform: scale(1);
+  transition: 0.4s ease-in-out;
+}
+.p-banner__list .p-banner__list-item img:hover {
+  transform: scale(1.15);
+}
+
+/*============================modal=============================*/
+/*~~~~~共通パーツ~~~~~*/
+.c-genre__line {
+  content: "";
+  display: inline-block;
+  background-color: #323232;
+}
+
+/*~~~~~/共通パーツ~~~~~*/
+.js-modal__box {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*モーダルの背景 */
+  /*モーダルを閉じるボタン*/
+}
+.js-modal__box .js-modal__back {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.js-modal__box .p-modal__warp {
+  position: absolute;
+  background-color: #fffcf4;
+  background-image: url(../img/background__line.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 88%;
+  height: 88%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*/p-modal__sns*/
+}
+@media only screen and (min-width: 1025px) {
+  .js-modal__box .p-modal__warp {
+    width: 85%;
+    height: 85%;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 4%;
+  /*p-text__item-01*/
+  /*p-text__item-02*/
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-modal__contents-inner {
+  width: 100%;
+  margin: 0% auto;
+  padding: 40px 0 120px;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-modal__contents-inner {
+    width: 80%;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents h4 {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-modal__img {
+  width: 83.33%;
+  margin: 0 auto 120px;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-modal__img {
+    width: 37.8%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-modal__img03 {
+    width: 80%;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-modal__coment {
+  margin-bottom: 64px;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-01 {
+  padding-bottom: 120px;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-01 .p-genre__list-item {
+  margin-bottom: 42px;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-01 .p-genre__list-item .p-genre__list-item-box {
+  display: flex;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-01 .p-genre__list-item .p-genre__list-item-box .c-genre__line {
+  padding: 1px;
+  height: 20px;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-01 .p-genre__list-item .p-genre__list-item-box .p-text__item-01-text {
+  word-break: break-all;
+  padding-left: 8px;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul {
+  z-index: 1;
+  position: relative;
+}
+@media only screen and (min-width: 1025px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul {
+    width: 50%;
+    min-width: 420px;
+    max-width: 600px;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul ::before {
+    top: 10px;
+    left: 0%;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 16px 8px;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner li {
+  width: 50%;
+  min-width: 160px;
+  margin-bottom: 32px;
+  padding: 0 8px;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner li {
+    min-width: auto;
+    width: auto;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner li .p-text__item-box {
+  margin-top: 16px;
+  display: flex;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner li .p-text__item-box {
+    flex-flow: column;
+    margin-top: 0px;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner li .p-text__item-box .c-genre__line {
+  height: 20px;
+  padding: 1px;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner li .p-text__item-box .c-genre__line {
+    margin: 4px 2px;
+    width: 20px;
+    height: 2px;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner li .p-text__item-box .p-text__item-02-text {
+  padding: 0 8px;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 ul .p-ul__inner li:nth-of-type(4) {
+  margin: 0;
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 .p-colorpalette {
+  width: 100%;
+  margin-top: 48px;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 .p-colorpalette {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__contents .p-text__item-02 .p-colorpalette img:nth-of-type(2) {
+  margin-top: 40px;
+}
+.js-modal__box .p-modal__warp .p-modal__sns .p-modal__title {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.js-modal__box .p-modal__warp .p-modal__sns .p-modal__sns-item {
+  margin: 0 auto;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__sns .p-modal__sns-item {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .js-modal__box .p-modal__warp .p-modal__sns .p-modal__sns-item {
+    width: 46.29%;
+  }
+}
+.js-modal__box .p-modal__warp .p-modal__works-img {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 100%;
+  margin: 0% auto;
+}
+.js-modal__box .p-modal__warp .p-modal__works-img img {
+  margin: 42px auto;
+}
+@media only screen and (min-width: 600px) {
+  .js-modal__box .p-modal__warp .p-modal__works-img img {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .js-modal__box .p-modal__warp .p-modal__works-img img {
+    width: 46.29%;
+  }
+}
+.js-modal__box .js-modal__close {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  z-index: 9999;
+  top: -20px;
+  right: -20px;
+  border-radius: 50%;
+  background-color: #202020;
+}
+@media only screen and (min-width: 1025px) {
+  .js-modal__box .js-modal__close {
+    width: 60px;
+    height: 60px;
+  }
+}
+.js-modal__box .js-modal__close span {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 70%;
+  height: 1px;
+  background-color: white;
+}
+.js-modal__box .js-modal__close span:nth-of-type(1) {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+.js-modal__box .js-modal__close span:nth-of-type(2) {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+/*============================/modal=============================*/
+/*============================/banner=============================*/
 /*============================footer=============================*/
 #footer {
   position: relative;
@@ -786,25 +1047,25 @@ body p {
   color: #323232;
   font-family: "Noto Serif JP";
   /*fontsize (1.5rem基準)*/
-  font-size: clamp(1.5rem , 4vw , 1.8rem);
+  font-size: clamp(1.5rem, 4vw, 1.8rem);
   font-weight: 300;
   line-height: 2;
-  letter-spacing: clamp(0.4rem , 0.3vw , 1.2rem);
+  letter-spacing: clamp(0.4rem, 0.3vw, 1.2rem);
 }
 @media only screen and (min-width: 600px) {
   body p {
     /*fontsize (1.8rem基準)*/
-    font-size: clamp(1.6rem , 2.34vw , 2.2rem );
+    font-size: clamp(1.6rem, 2.34vw, 2.2rem);
   }
 }
 @media only screen and (min-width: 1025px) {
   body p {
     /*fontsize (1.6rem基準)*/
-    font-size: clamp(1.6rem , 1.171vw ,1.8rem );
+    font-size: clamp(1.6rem, 1.171vw, 1.8rem);
   }
 }
 body .c-nav__link {
-  font-size: clamp(2.4rem , 6.933vw , 2.6rem);
+  font-size: clamp(2.4rem, 6.933vw, 2.6rem);
   height: 100%;
   width: 100%;
 }
@@ -815,13 +1076,13 @@ body .c-nav__link {
   }
 }
 body .c-button a {
-  font-size: clamp(1.6rem , 3.2vw , 2.4rem);
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
   font-weight: 200;
-  letter-spacing: clamp(1rem , 0.4vw , 1.2rem);
+  letter-spacing: clamp(1rem, 0.4vw, 1.2rem);
 }
 @media only screen and (min-width: 1025px) {
   body .c-button a {
-    font-size: clamp(1.6rem , 1.171vw ,2.4rem );
+    font-size: clamp(1.6rem, 1.171vw, 2.4rem);
   }
 }
 body #footer p {
@@ -851,26 +1112,26 @@ body .c-section__title-sub {
   font-family: "Italianno", cursive;
 }
 body .c-section__title-sub {
-  font-size: clamp(9rem , 20vw , 30rem);
+  font-size: clamp(9rem, 20vw, 30rem);
   color: rgba(159, 209, 255, 0.4);
 }
 @media only screen and (min-width: 600px) {
   body .c-section__title-sub {
-    font-size: clamp( 11.6rem , 17.699vw , 12.4rem);
+    font-size: clamp(11.6rem, 17.699vw, 12.4rem);
   }
 }
 @media only screen and (min-width: 1025px) {
   body .c-section__title-sub {
-    font-size: clamp(11.6rem , 8.784vw , 13rem);
+    font-size: clamp(11.6rem, 8.784vw, 13rem);
   }
 }
 body .c-section__title-main {
   color: #000;
-  font-size: clamp(2.6rem , 6vw , 3.4rem);
+  font-size: clamp(2.6rem, 6vw, 3.4rem);
 }
 @media only screen and (min-width: 600px) {
   body .c-section__title-main {
-    font-size: clamp(3.2rem , 44.719vw , 3.6rem);
+    font-size: clamp(3.2rem, 44.719vw, 3.6rem);
   }
 }
 body .p-mv__item-text {
@@ -890,29 +1151,76 @@ body .p-mv__item-text {
   }
 }
 body .p-works__text-01 {
-  font-size: clamp( 2rem , 8.533vw , 3.8rem);
+  font-size: clamp(2rem, 8.533vw, 3.8rem);
   font-weight: 300;
 }
 @media only screen and (min-width: 1025px) {
   body .p-works__text-01 {
-    font-size: clamp( 3.2rem , 2.34vw , 3.6rem);
+    font-size: clamp(3.2rem, 2.34vw, 3.6rem);
   }
 }
 body .p-works__text-02 .p-works__genre-title {
-  font-size: clamp( 2rem , 5.33vw , 2.6rem);
+  font-size: clamp(2rem, 5.33vw, 2.6rem);
 }
 @media only screen and (min-width: 1025px) {
   body .p-works__text-02 .p-works__genre-title {
-    font-size: clamp( 2.2rem ,1.756vw , 2.4rem);
+    font-size: clamp(2.2rem, 1.756vw, 2.4rem);
   }
 }
 body .p-works__text-02 .p-works__genre-text {
-  font-size: clamp(1.4rem , 3.733vw , 2rem );
+  font-size: clamp(1.4rem, 3.733vw, 2rem);
 }
 @media only screen and (min-width: 1025px) {
   body .p-works__text-02 .p-works__genre-text {
-    font-size: clamp(1.6rem , 1.171vw , 1.8rem);
+    font-size: clamp(1.6rem, 1.171vw, 1.8rem);
   }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~モーダルウィンドウ~~~~~~~~~~~~~~~~~~~~~~*/
+.p-modal__contents h4 {
+  /*font-size (2.2rem基準)*/
+  font-size: clamp(1.8rem, 5.86vw, 2.6rem);
+  letter-spacing: 2px;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .p-modal__contents h4 {
+    letter-spacing: 4px;
+    font-size: clamp(3.2rem, 44.719vw, 3.6rem);
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .p-modal__contents h4 {
+    font-size: clamp(3rem, 2.34vw, 3.6rem);
+  }
+}
+.p-modal__contents .p-modal__title {
+  /*font-size (1.6rem基準)*/
+  font-size: clamp(1.6rem, 4.266vw, 2rem);
+}
+@media only screen and (min-width: 1025px) {
+  .p-modal__contents .p-modal__title {
+    /*font-size (2rem基準)*/
+    font-size: clamp(1.8rem, 1.46vw, 2.4rem);
+  }
+}
+.p-modal__contents .p-modal__coment {
+  /*font-size (1.6rem基準)*/
+  font-size: clamp(1.6rem, 4.266vw, 2rem);
+}
+@media only screen and (min-width: 1025px) {
+  .p-modal__contents .p-modal__coment {
+    /*font-size (2rem基準)*/
+    font-size: clamp(1.8rem, 1.46vw, 2.4rem);
+  }
+}
+.p-modal__contents .p-genre__title {
+  /*font-size (1.5rem基準)*/
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  font-weight: 400;
+}
+.p-modal__contents .p-text__item-02-text p {
+  letter-spacing: 4px;
 }
 
 /*============================js=============================*/
