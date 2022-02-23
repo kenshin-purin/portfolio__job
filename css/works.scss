@@ -106,64 +106,64 @@ body {
 }
 
 /*===========================loading(全ページ共通)=============================*/
-// .l-loading {
-//   position: fixed;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 100vh;
-//   background-color: rgb(255, 252, 244);
+.l-loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 252, 244);
 
-//   z-index:9999;
-//   top: 0%;
-//   left: 0%;
-//   opacity: 0;  //非表示
-//   visibility: hidden;  //クリックされないように
-//   transition: all 1s;
+  z-index:9999;
+  top: 0%;
+  left: 0%;
+  opacity: 0;  //非表示
+  visibility: hidden;  //クリックされないように
+  transition: all 1s;
 
-//   .p-loading-circle {
-//     position: absolute;
-//     /*ここで円のサイズを指定*/
-//     width: 30vw;
-//     height: 30vw;
-//     min-width: 260px;
-//     min-height: 260px;
+  .p-loading-circle {
+    position: absolute;
+    /*ここで円のサイズを指定*/
+    width: 30vw;
+    height: 30vw;
+    min-width: 260px;
+    min-height: 260px;
 
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50% ,-50%);
-//   }
-//   h2 {
-//     /*font-size1.6rem基準*/
-//     font-size:clamp(1.4rem , 4.266vw , 1.8rem);
-//     @include pc{
-//       font-size: 2.4rem;
-//     }
-//     animation: load 2s linear infinite;
-//     color: #323232;
-//   }
-//   @keyframes load {
-//     50% {
-//       opacity: .4;
-//       transform: translateY(-4px);
-//     }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+  }
+  h2 {
+    /*font-size1.6rem基準*/
+    font-size:clamp(1.4rem , 4.266vw , 1.8rem);
+    @include pc{
+      font-size: 2.4rem;
+    }
+    animation: load 2s linear infinite;
+    color: #323232;
+  }
+  @keyframes load {
+    50% {
+      opacity: .4;
+      transform: translateY(-4px);
+    }
 
-//     80% {
-//       opacity: .6;
-//     }
+    80% {
+      opacity: .6;
+    }
 
-//     100% {
-//     }
+    100% {
+    }
     
-//   }
+  }
 
 
-//   &.active {
-//     opacity: 1;
-//     visibility: visible;
-//   }
-// }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 /*===========================/loading(全ページ共通)=============================*/
 
 /*============================header=============================*/
