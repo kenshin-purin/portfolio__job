@@ -108,6 +108,67 @@ body .warp {
 }
 
 /*===========================loading(全ページ共通)=============================*/
+.l-loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fffcf4;
+  z-index: 9999;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+}
+.l-loading .p-loading-circle {
+  position: absolute;
+  /*ここで円のサイズを指定*/
+  width: 30vw;
+  height: 30vw;
+  min-width: 260px;
+  min-height: 260px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-loading h2 {
+  /*font-size1.6rem基準*/
+  font-size: clamp(1.4rem, 4.266vw, 1.8rem);
+  -webkit-animation: load 2s linear infinite;
+          animation: load 2s linear infinite;
+  color: #323232;
+}
+@media only screen and (min-width: 1025px) {
+  .l-loading h2 {
+    font-size: 2.4rem;
+  }
+}
+@-webkit-keyframes load {
+  50% {
+    opacity: 0.4;
+    transform: translateY(-4px);
+  }
+  80% {
+    opacity: 0.6;
+  }
+}
+@keyframes load {
+  50% {
+    opacity: 0.4;
+    transform: translateY(-4px);
+  }
+  80% {
+    opacity: 0.6;
+  }
+}
+.l-loading.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*===========================/loading(全ページ共通)=============================*/
 /*============================header=============================*/
 .l-header {
