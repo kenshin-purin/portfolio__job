@@ -1403,7 +1403,7 @@ body .p-contact__item-text p {
 
 .js-scroll__clear {
   opacity: 1;
-  transition: all 1.5s;
+  transition: all 1s;
 }
 
 .js-fadein {
@@ -1412,12 +1412,12 @@ body .p-contact__item-text p {
 
 .top {
   transform: translate(0px, -20px);
-  transition: transform 2s ease-out, opacity 1.5s;
+  transition: transform 1s ease-out, opacity 1s;
 }
 
 .right {
   transform: translate(14px, 0px);
-  transition: transform 2s ease-out, opacity 1.5s;
+  transition: transform 1s ease-out, opacity 1s;
 }
 
 .js-scroll__fadein {

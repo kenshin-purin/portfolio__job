@@ -1291,7 +1291,7 @@ body .p-works__text-02 .p-works__genre-text {
 
 .js-scroll__clear {
   opacity: 1;
-  transition: all 1s;
+  transition: all 0.75s;
 }
 
 .js-fadein {
@@ -1300,17 +1300,17 @@ body .p-works__text-02 .p-works__genre-text {
 
 .top {
   transform: translate(0px, -10px);
-  transition: transform 1.5s ease-out, opacity 1s;
+  transition: transform 1.5s ease-out, opacity 0.5s;
 }
 
 .right {
   transform: translate(14px, 0px);
-  transition: transform 1.5s ease-out, opacity 1s;
+  transition: transform 1.5s ease-out, opacity 0.5s;
 }
 
 .left {
   transform: translate(-14px, 0px);
-  transition: transform 1.5s ease-out, opacity 1s;
+  transition: transform 1.5s ease-out, opacity 0.5s;
 }
 
 .js-scroll__fadein {
